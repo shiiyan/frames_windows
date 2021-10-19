@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<body>
+  <iframe src="/" id="iframe"></iframe>
+  <script>
+    let oldDoc = iframe.contentDocument;
+    iframe.onload = function () {
+      let newDoc = iframe.contentDocument;
+      alert(oldDoc == newDoc);
+    };
+  </script>
+</body>

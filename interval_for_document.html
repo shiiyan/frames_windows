@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<body>
+  <iframe src="/" id="iframe"></iframe>
+  <script>
+    let oldDoc = iframe.contentDocument;
+
+    let timer = setInterval(() => {
+      let newDoc = iframe.contentDocument;
+      if (newDoc == oldDoc) return;
+
+      alert("New document is here!");
+
+      clearInterval(timer);
+    }, 100);
+
+    console.log("timer:", timer);
+  </script>
+</body>
