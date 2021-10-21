@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<body>
+  <iframe src="/" style="height:80px;" name="win" id="iframe"></iframe>
+  <script>
+    alert(iframe.contentWindow == frames[0]);
+    alert(iframe.contentWindow == frames.win);
+  </script>
+</body>
